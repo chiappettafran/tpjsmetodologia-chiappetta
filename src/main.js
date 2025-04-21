@@ -4,10 +4,11 @@ document.querySelector('#app').innerHTML = `
     <div class="input-wrapper">
         <label for="texto" class="input-label">Buscar personaje</label>
         <input type="text" id="texto" name="usuario" placeholder="Personaje" required>
+    </div>  
+    
+    <div id="tabla-container" class="table-wrapper">
+        Cargando...
     </div>
-    
-    
-    <div id="tabla-container" class="table-wrapper">Cargando...</div>
 `
 
 

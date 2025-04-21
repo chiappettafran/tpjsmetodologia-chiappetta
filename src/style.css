@@ -3,11 +3,12 @@ body {
 }
 
 .table-wrapper {
+    display: flex;
     max-width: 100%;
 }
 
 .styled-table {
-    width: 850px;
+    width: 750px;
     min-width: 500px;
     margin: 0 auto;
     border-collapse: initial;
