@@ -32,7 +32,6 @@ async function cargarListaPersonajesCompleta(){
             const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${i}`);
             const data = await response.json();
 
-
             data.results.forEach(personaje => {
                 listaPersonajes.push({
                     name: personaje.name,
@@ -45,7 +44,8 @@ async function cargarListaPersonajesCompleta(){
         generarTabla(listaPersonajes)
 
     } catch (error) {
-        document.getElementById('tabla-container').textContent = 'Error al cargar los datos.';
+        listaPersonajes.length = 0;
+        generarTabla(listaPersonajes)
         console.error('Error:', error);
     }
 }
