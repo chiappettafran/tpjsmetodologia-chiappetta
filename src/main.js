@@ -12,6 +12,7 @@ document.querySelector('#app').innerHTML = `
 `
 
 
+
 let listaPersonajes = []
 
 let timeout = null;
